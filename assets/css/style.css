@@ -56,13 +56,18 @@ a.navbar-brand img {
 footer img{
     width: 80px;
 }
-.scroll-reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 1s ease, transform 1s ease;
+@keyframes fadeAndFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.scroll-reveal.revealed {
-  opacity: 1;
-  transform: translateY(0);
+main{
+    animation: fadeAndFloat 1.2s ease-out;
 }
+
