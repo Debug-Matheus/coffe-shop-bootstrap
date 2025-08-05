@@ -56,3 +56,9 @@ a.navbar-brand img {
 footer img{
     width: 80px;
 }
+.numero{
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-color: white;
+}
